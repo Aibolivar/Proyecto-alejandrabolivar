@@ -53,6 +53,9 @@ nav {
     padding:20px;
     background-image: url('img/fondo.jpg');
 }
+iframe {
+    margin: 20px;
+}
 
 
 footer {
