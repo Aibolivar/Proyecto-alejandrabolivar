@@ -1,69 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Cambié a Roboto como fuente principal */
     margin: 0;
     padding: 0;
-    background-color: #586466;
+    background-color: #586466; /* Color de fondo */
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    background: #35424a; /* Color de fondo del encabezado */
+    color: #ffffff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el encabezado */
 }
 
 nav {
-    margin: 20px 0;
+    margin: 20px 0; /* Margen superior e inferior */
 }
 
- a {
-    display: flex;
+a {
+    display: inline-flex; /* Cambié a inline-flex para que se ajuste mejor */
     justify-content: center;
     align-items: center;
-    color: #6b98cc;
-    text-decoration: none;
+    color: #6b98cc; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
     font-weight: bold; 
-    padding: 10px 15px;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: brackground 0.3s;
-    font-family: 'Roboto', sans-serif; 
+    padding: 10px 15px; /* Espaciado interno */
+    margin: 0 10px; /* Margen lateral */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
- a:hover {
-    color: #97e2e7bd;
+
+a:hover {
+    background-color: rgba(107, 152, 204, 0.2); /* Fondo al pasar el ratón */
+    color: #97e2e7bd; /* Color del texto al pasar el ratón */
 }
 
 .main {
-
-    background-image: url('img/fondo.jpg');
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    margin: 20px auto;
-    padding: 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color:#d6e0e6;
+    background-image: url('img/fondo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir todo el contenedor */
+    margin: 20px auto; /* Margen automático */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes más redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    color: #d6e0e6; /* Color del texto */
 }
+
 .video-container {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 20px auto;
-    padding:20px;
-    background-image: url('img/fondo.jpg');
-}
-iframe {
-    margin: 20px;
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    margin: 20px auto; /* Margen automático */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(53, 66, 74, 0.8); /* Fondo semi-transparente */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+iframe {
+    margin: 20px; /* Margen alrededor del iframe */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para el iframe */
+}
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    text-align: center; /* Alineación del texto */
+    padding: 10px 0; /* Espaciado interno */
+    background: #35424a; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    position: relative; /* Posición relativa */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra en la parte superior del pie de página */
 }
